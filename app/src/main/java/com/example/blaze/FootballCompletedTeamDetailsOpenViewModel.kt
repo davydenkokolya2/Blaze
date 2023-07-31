@@ -2,6 +2,6 @@ package com.example.blaze
 
 import androidx.lifecycle.ViewModel
 
-class MenuViewModel : ViewModel() {
+class FootballCompletedTeamDetailsOpenViewModel : ViewModel() {
     // TODO: Implement the ViewModel
 }

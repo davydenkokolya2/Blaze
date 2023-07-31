@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.host.HostFragment">
+
+
+    <ImageView
+        android:id="@+id/btnBackHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/icon_back"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icon_blaze"
+        app:layout_constraintStart_toEndOf="@+id/btnBackHome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="35dp"
+        android:src="@drawable/icon_top_right_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnFootball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="31dp"
+        android:src="@drawable/icon_foot_ball"
+        app:layout_constraintEnd_toStartOf="@+id/btnHockey"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <ImageView
+        android:id="@+id/btnHockey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_hockey"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFootball"
+        app:layout_constraintEnd_toStartOf="@+id/btnBasketball"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnFootball"
+        app:layout_constraintTop_toTopOf="@+id/btnFootball" />
+
+    <ImageView
+        android:id="@+id/btnBasketball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_basketball"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHockey"
+        app:layout_constraintEnd_toStartOf="@+id/btnVoleyball"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnHockey"
+        app:layout_constraintTop_toTopOf="@+id/btnHockey" />
+
+    <ImageView
+        android:id="@+id/btnVoleyball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/icon_volleyball"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBasketball"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBasketball"
+        app:layout_constraintTop_toTopOf="@+id/btnBasketball" />
+
+    <ImageView
+        android:id="@+id/btnUpcomingNull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/icon_upcoming_null"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/btnCompletedNull"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFootball" />
+
+    <ImageView
+        android:id="@+id/btnCompletedNull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/icon_completed_null"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnUpcomingNull"
+        app:layout_constraintTop_toTopOf="@+id/btnUpcomingNull" />
+
+    <ImageView
+        android:id="@+id/btnCompletedFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/icon_completed_false"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnUpcomingNull"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHockey" />
+
+    <ImageView
+        android:id="@+id/btnCompletedTrue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_completed_true"
+        android:translationZ="1dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/btnCompletedNull"
+        app:layout_constraintTop_toTopOf="@+id/btnUpcomingNull" />
+
+    <ImageView
+        android:id="@+id/btnUpcomingTrue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_upcoming_true"
+        android:translationZ="1dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/btnUpcomingNull"
+        app:layout_constraintTop_toTopOf="@+id/btnCompletedNull" />
+
+    <ImageView
+        android:id="@+id/btnUpcomingFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/icon_upcoming_false"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHockey" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="com.example.blaze.ui.menu.MenuFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHockey"
+        tools:layout="@layout/fragment_menu" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="@string/blaze"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.74" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

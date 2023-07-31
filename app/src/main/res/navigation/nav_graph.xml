@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/addNoteFragment">
+
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.example.blaze.ui.add_note.AddNoteFragment"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note" />
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.blaze.ui.calendar.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/factorFragment"
+        android:name="com.example.blaze.ui.factor.FactorFragment"
+        android:label="fragment_factor"
+        tools:layout="@layout/fragment_factor" />
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.example.blaze.ui.favourites.FavouritesFragment"
+        android:label="fragment_favourites"
+        tools:layout="@layout/fragment_favourites" />
+    <fragment
+        android:id="@+id/hostFragment"
+        android:name="com.example.blaze.ui.host.HostFragment"
+        android:label="fragment_host"
+        tools:layout="@layout/fragment_host" />
+    <fragment
+        android:id="@+id/leagueFragment"
+        android:name="com.example.blaze.ui.league.LeagueFragment"
+        android:label="fragment_league"
+        tools:layout="@layout/fragment_league" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.blaze.ui.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.blaze.ui.notes.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" />
+    <fragment
+        android:id="@+id/teamFragment"
+        android:name="com.example.blaze.ui.team.TeamFragment"
+        android:label="fragment_team"
+        tools:layout="@layout/fragment_team" />
+    <fragment
+        android:id="@+id/victoriesFragment"
+        android:name="com.example.blaze.ui.victories.VictoriesFragment"
+        android:label="fragment_victories"
+        tools:layout="@layout/fragment_victories" />
+    <fragment
+        android:id="@+id/footballCompletedFragment"
+        android:name="com.example.blaze.ui.football_completed.FootballCompletedFragment"
+        android:label="fragment_football_completed"
+        tools:layout="@layout/fragment_football_completed" />
+    <fragment
+        android:id="@+id/footballCompletedTeamDetailsOpenFragment"
+        android:name="com.example.blaze.FootballCompletedTeamDetailsOpenFragment"
+        android:label="fragment_football_completed_team_details_open"
+        tools:layout="@layout/fragment_football_completed_team_details_open" />
+    <fragment
+        android:id="@+id/footballCompletedTeamMatchesFragment"
+        android:name="com.example.blaze.FootballCompletedTeamMatchesFragment"
+        android:label="fragment_football_completed_team_matches"
+        tools:layout="@layout/fragment_football_completed_team_matches" />
+    <fragment
+        android:id="@+id/footballStatisticsFragment"
+        android:name="com.example.blaze.FootballStatisticsFragment"
+        android:label="fragment_football_statistics"
+        tools:layout="@layout/fragment_football_statistics" />
+    <fragment
+        android:id="@+id/footballUpcomingFragment"
+        android:name="com.example.blaze.ui.football_upcoming.FootballUpcomingFragment"
+        android:label="fragment_football_upcoming"
+        tools:layout="@layout/fragment_football_upcoming" />
+    <fragment
+        android:id="@+id/victoriesBasketballFragment"
+        android:name="com.example.blaze.ui.victories_basketball.VictoriesBasketballFragment"
+        android:label="fragment_victories_basketball"
+        tools:layout="@layout/fragment_victories_basketball" />
+</navigation>
